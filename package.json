@@ -1,0 +1,26 @@
+{
+  "name": "sufaan",
+  "version": "1.0.0",
+  "description": "halaal meat shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "vikas passi",
+  "license": "ISC",
+  "dependencies": {
+    "barcode": "^0.1.0",
+    "bcrypt": "^5.1.1",
+    "canvas": "^2.11.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "html2canvas": "^1.4.1",
+    "jsbarcode": "^3.11.6",
+    "jsonwebtoken": "^9.0.2",
+    "jspdf": "^2.5.1",
+    "mongoose": "^8.2.1",
+    "nodemon": "^3.1.0",
+    "react-jsbarcode": "^0.4.2"
+  }
+}
