@@ -1,6 +1,7 @@
 const staff= require("../user/staffModel")
 const bcrypt=require("bcrypt")
 const jwt=require("jsonwebtoken")
+require("dotenv").config()
 function login(req,res){
     let formdata=req.body
     let validations=[]
@@ -28,7 +29,7 @@ function login(req,res){
             }else{
                 let hashedpwd= bcrypt.compareSync(formdata.password,item.password)
                 let payload={name:formdata.name,password:formdata.password}
-                let token =jwt.sign(payload,"SECRET123")
+                let token =jwt.sign(payload,process.env.SECRETKEY)
                 if(!hashedpwd){
                     res.send({
                         success:false,
