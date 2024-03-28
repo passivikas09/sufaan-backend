@@ -6,7 +6,7 @@ app.use(express.urlencoded())
 app.use(express.json())
 app.use(cors({
     origin: 'http://localhost:3000', // Allow requests from http://localhost:3001
-    methods: ['GET', 'POST','PUT'], // Allow only specified methods
+    methods: ['GET', 'POST','PUT','DELETE'], // Allow only specified methods
     allowedHeaders: ['Content-Type', 'Authorization'] // Allow only specified headers
   }))
 const userRouter=require("./Routes/user")
